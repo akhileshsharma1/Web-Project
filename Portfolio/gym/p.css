@@ -1,0 +1,468 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+   
+   .box{
+       width: 100%;
+       height: 100vh;
+       background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(dumbell.jpg);
+       background-size: cover;
+       background-position: center;
+      
+   }
+   .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .logo{
+    height: 80px;
+    width:180px;
+    cursor: pointer;
+   }
+   .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+   }
+   .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+   }
+   .navbar ul li::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background:linear-gradient(#09f109,#340aee);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+   }
+   .navbar ul li:hover::after{
+    width: 100%;
+   }
+   .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: aliceblue;
+   }
+   .content h1{
+    font-size: 70px;
+    margin-top: 80px;
+   }
+   .content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+   }
+   button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid aliceblue;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow:hidden;
+   }
+   span{
+    background: linear-gradient(#09f109,#340aee);;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.contain{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(143, 143, 143, 0.75));
+    background-size: cover;
+    background-position: center;
+   position: absolute;
+
+}
+
+.ccc{
+    width: 100%;
+    height: 180vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(nrk1.jpg);
+    background-size: cover;
+    background-position: center;
+position: absolute;
+top: 200%;
+
+}
+.center{
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+height:90%;
+width: 30%;
+font-size: 20px;
+margin: 31px;
+ 
+}
+.center h1{
+    color:aquamarine;
+cursor: pointer;
+display: block;
+}
+.row{
+    display: flex;
+    flex-wrap:wrap;
+padding: 2em 1em;
+color: white;
+text-align: center;
+}
+.rrr h1{
+    text-align: center;
+    font-size: 55px;
+    cursor: pointer;
+    display: block;
+    color: aqua;
+    padding: 25px;
+}
+
+.column{
+    width: 100%;
+    padding: 0.5em 0em;
+}
+
+.card{
+    box-shadow:0 0 2.2em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color:aqua;
+    cursor: pointer;
+    transition: 0.5s;
+background-color: rgba(48, 46, 48, 0.5);
+}
+.card .imgcontain{
+    width:8em;
+    height:8em;
+    background-color:rgb(36, 102, 5);
+    padding: 0.4em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+.card img{
+    width: 100%;
+height: 100%;
+border-radius: 50%;
+}
+.card h3{
+    font-weight: 500;
+}
+.card p{
+    font-weight: 300;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+.icons{
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+.card:hover{
+    background:linear-gradient(#090538,#b14c08);
+color:aquamarine;
+}
+.card:hover .imgcontain{
+    transform: scale(1.1);
+} 
+@media screen and (min-width: 768px) {
+    section{
+        padding: 1em 7em;
+    }
+}
+@media screen and (min-width: 992px) {
+    section{
+        padding: 1em 7em;
+    }
+}
+.card{
+    padding: 5em 1em;
+}
+.column{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 1em 1em;
+}
+.foot{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(nrk.jpg);
+    background-size: cover;
+    background-position: center;
+   position: absolute;
+   top: 100%;
+}
+.nrk2{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(black,rgb(53, 53, 53));
+    background-size: cover;
+    background-position: center;
+position: absolute;
+top: 168%;
+}
+.last{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(last.jpg);
+    background-size: cover;
+    background-position: center;
+position: absolute;
+top: 223%;
+}
+.tain{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+.conb{
+    max-width: 850px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+  }
+  .lef{
+    height: 100%;
+    background: linear-gradient(#5e125e,#612403);
+  }
+  .rig{
+    padding: 25px 40px;
+  }
+  .rig h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .rig h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc;
+  }
+  .field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(230,230,230,0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+  }
+  .field:hover{
+    background-color: rgba(0,0,0,0.1);
+  }
+  .field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30,85,250,0.47);
+}
+.area{
+    min-height: 150px;
+}
+  .btns{
+width: 100%;
+padding: 0.5rem 1rem;
+font-size: 1.1rem;
+background-color: #6940c9;
+cursor: pointer;
+outline: none;
+border: none;
+border-radius: 50px;
+  }
+  .btns:hover{
+    background-color: #024e13;
+  }
+  .heass{
+    text-align: center;
+    padding: 50px;
+    color: aquamarine;
+}
+.pricing{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.colpp{
+    flex: 25%;
+    padding: 10px;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+.tabl{
+    height: 100%;
+    background-color: rgba(148, 145, 155, 0.5);
+    color: white;
+    padding: 40px 20px;
+    font-family: sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #000070;
+    border: 1px solid white;
+    
+}
+.tabl:hover{
+    background: linear-gradient(#689368,#5643);
+    cursor: pointer;
+}
+.tabl ul{
+    margin: 0;
+    padding: 0;
+}
+.tabl ul li{
+    padding: 10px 0;
+    list-style: none;
+}
+.pric span{
+    display: block;
+    font-size: 14px;
+}
+.tabl a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(14, 184, 214);
+    display: block;
+    padding: 10px 10px;
+    margin:10px 0;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.5s linear;
+}
+.tabl a:hover{
+background: #000070;
+color: #fff;
+}   
+.pop{
+    background: #2c3e50;
+    color: #fff;
+    transform: rotate(45deg);
+    padding: 10px 40px;
+    position: absolute;
+    top: 16px;
+    right: -34px;
+}
+.tit{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 24px;
+    color: aquamarine;
+    }
+    .tit h1::after{
+        content: "";
+        height: 4px;
+        width: 230px;
+        background-color:aquamarine;
+        display: block;
+        margin: auto;
+    }
+    .serve{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        margin: 75px auto;
+        text-align: center;
+    }
+    .cars{
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 10px;
+        padding: 20px 20px;
+        background-color: rgba(0,0,0,0.5) ;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .cars:hover{
+        background-color: rgb(60, 55, 112);
+        color:aliceblue ;
+    }
+    .cars .iconsss{
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    .cars h2{
+        font-size: 28px;
+        color: rgb(209, 19, 108);
+        margin-bottom: 20px;
+    }
+    .cars p{
+        font-size: 17px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        color: #ffffff;
+    }
+    .btttnn{
+        font-size: 15px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #5e5e5e;
+        padding: 8px 12px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+    }
+    .btttnn:hover{
+        background-color:burlywood;
+        transition: 0.4s ease;
+    
+    }

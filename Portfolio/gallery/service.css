@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.service{
+width: 100%;
+height: 100vh;
+background:linear-gradient(black,gray);
+}
+.services{
+    width: 1300px;
+    padding: 40px 40px;
+    margin: auto;
+}
+.services h1{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 94px;
+    position: relative;
+    font-weight: 600;
+    color: aliceblue;
+}
+.services h1:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    color: aliceblue;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: calc(34% - 22px);
+    padding: 30px 12px;
+    margin: 10px 30px;
+    color: #fff;
+    background-color: rgba(15, 22, 8, 0.5);
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 4px rgba(236, 81, 81, 0.3) ;
+  }
+  
+  .card:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 0px;
+    height: 0px;
+    border-bottom: 70px solid rgba(134, 133, 133, 0.5);
+    border-right: 70px solid transparent;
+    -webkit-box-shadow: -7px 7px 7px rgba(214, 44, 44, 0.3);
+    -moz-box-shadow: -7px 7px 7px rgba(240, 25, 25, 0.3);
+    box-shadow: -7px 7px 7px rgba(221, 50, 50, 0.3);
+  }
+   
+  .card:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 0px;
+    height: 0px;
+    border-top: 69px solid rgba(0, 0, 0, 0.5); 
+    border-left: 69px solid transparent;
+  }
+.card i{
+    color: #dc143c;
+}
+.card:hover{
+    background-color: rgb(241, 88, 114);
+}
+
+.box i{
+    font-size: 36px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 15px;
+}
+.box h3{
+    font-size: 28px;
+    margin: 40px 0px 0px 0px;
+}
+.box p{
+    margin: 20px 0;
+}
+.box a{
+    text-decoration: none;
+    color: #dc143c;
+    font-size: 20px;
+    font-weight: 500;
+    background: #333;
+    padding: 7px 15px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.pra button {
+    border-radius: 4px;
+    background-color: #dc143c;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  .pra button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .pra button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .pra button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .pra button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }

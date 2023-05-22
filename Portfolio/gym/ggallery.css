@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+   background-color: rgb(26, 25, 25);
+}
+.container{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-weight: 400;
+    font-size: 45px;
+    position: relative;
+    margin: 40px 0px;
+    color:rgb(253, 62, 94);
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: gray;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 50px;
+    }
+    50%{
+        width:100px;
+    }
+    100%{
+        width:50px;
+    }
+}
+input{
+    display: none;
+}
+.topc{
+    background-color:black;
+    color: aliceblue;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+align-items: center;
+border-radius: 5px;
+box-shadow: 3px 3px 5px ;
+}
+.topc h3{
+    height: 100%;
+    background:linear-gradient(rgb(250, 72, 102),rgb(148, 80, 80));
+    line-height: 29px;
+    padding: 0 50px;
+    color: white;
+}
+label{
+    display: inline-block;
+    height: 100%;
+    padding: 0 30px;
+    margin: 0 10px;
+    line-height: 60px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+label:hover{
+    color: white;
+   background-color: gray;
+}
+
+.photo{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    cursor: pointer;
+}
+.pic{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgb(250, 72, 102);;
+
+}
+.pic img{
+width: 100%;
+height: 100%;
+ border-radius:10px;
+}
+.pic::before{
+    content: "PHOTO GALLERY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: aliceblue;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .2s ;
+    z-index: 1;
+}
+.pic:after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    transition:.3s;
+}
+.pic:hover::after{
+    height:100%;
+}
+.pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+   
+}
+#check0:checked ~ .container .photo .pic{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+#check1:checked ~ .container .photo .GYM{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+#check1:checked ~ .container .photo .jumba,
+#check1:checked ~ .container .photo .kick,
+#check1:checked ~ .container .photo .swim,
+#check1:checked ~ .container .photo .basket{
+    transform: scale(0);
+    opacity: 0;
+    position: absolute;
+    transition: .5s;
+
+}
+#check2:checked ~ .container .photo .jumba{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+#check2:checked ~ .container .photo .GYM,
+#check2:checked ~ .container .photo .kick,
+#check2:checked ~ .container .photo .swim,
+#check2:checked ~ .container .photo .basket{
+    transform: scale(0);
+    opacity: 0;
+    position: absolute;
+    transition: .5s;
+
+}
+#check3:checked ~ .container .photo .kick{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+#check3:checked ~ .container .photo .GYM,
+#check3:checked ~ .container .photo .jumba,
+#check3:checked ~ .container .photo .swim,
+#check3:checked ~ .container .photo .basket{
+    transform: scale(0);
+    opacity: 0;
+    position: absolute;
+    transition: .5s;
+
+}
+#check4:checked ~ .container .photo .swim{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+#check4:checked ~ .container .photo .GYM,
+#check4:checked ~ .container .photo .jumba,
+#check4:checked ~ .container .photo .kick,
+#check4:checked ~ .container .photo .basket{
+    transform: scale(0);
+    opacity: 0;
+    position: absolute;
+    transition: .5s;
+
+}
+#check5:checked ~ .container .photo .basket{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+#check5:checked ~ .container .photo .GYM,
+#check5:checked ~ .container .photo .jumba,
+#check5:checked ~ .container .photo .kick,
+#check5:checked ~ .container .photo .swim{
+    transform: scale(0);
+    opacity: 0;
+    position: absolute;
+    transition: .5s;
+
+}

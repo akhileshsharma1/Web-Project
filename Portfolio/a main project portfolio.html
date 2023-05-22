@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--Home part-->
+ <header>
+    <div class="navbar">
+        <img src="ak.png" class="logo">
+        <ul type="none">
+            <li><a class="active" href="#first2">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+             <li><a href="#service">SERVICES</a></li>
+              <li><a href="#skillspart">SKIlls</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contactme">CONTACT</a></li>
+           </ul>
+    </div>
+ </header>
+    <div class="first1">
+        
+        <div class="first2">
+            <h1>I,m Akhilesh <span class="web">Sharma</span> <br> a <span class="web">Web Designer</span></h1>
+            <p>Welcome to my portfolio website,<br> I am a professional full stack developer<br>
+                 I develop websites and apps</p><br>
+                 <div class="icons">
+                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.gmail.com/"><i class="fab fa-envelope"></i></a>
+                </div>
+                 <a href="CV.docx" download> <button type="button"><span class="web2"></span>DOWNLOAD CV</button></a>
+                 <a href="hireme.html" target="_blank"> <button type="button"><span class="web2"></span>HIRE ME</button></a>
+        </div>
+        <div class="frstimage">
+            <img src="mee.png">
+         </div>
+    </div>
+    <!--About Us part-->
+    <section class="aboout" id="about">
+        <div class="main">
+            <img src="meee.jpg">
+            <div class="abouttext">
+                <h1>About Me</h1>
+                <h4><span class="pro">Web Designer</span> and <span class="pro">Programmer</span></h4>
+                <p>Hi, I'm Akhilesh Sharma a web developer and programmer with 2 years of experience in the industry. I specialize in web designing, and have a deep understanding of latest technology and programming. I'm passionate about creating functional and beautiful websites that deliver an exceptional user experience.
+                    <br>
+                    Throughout my career, I've worked on a wide range of projects, from small business websites to large-scale e-commerce platforms. <br>
+                    I believe that effective communication, collaboration, and attention to detail are crucial to the success of any project. I work closely with clients to ensure that their vision is accurately reflected in the final product. I also strive to stay up-to-date with the latest trends and technologies in the industry, in order to provide the best possible solutions for my clients.<br>
+                    When I'm not coding, you can usually find me playing games. I'm always looking for new challenges and opportunities to learn and grow in my field. If you're interested in working together, please don't hesitate to get in touch!</p>
+                    <div class="m">
+                        <a href="#contactme"><button type="button" class="glow-on-hover"><span class="web3"></span>TALK TO ME</button></a>
+                        <a href="gallery/gallery.html" target="_blank"> <button type="button" class="glow-on-hover"><span class="web3"></span>GALLERY</button></a>
+                        
+</div>
+            </div>
+        </div>
+    </section>
+    <!--Service part-->
+    <div class="service" id="service">
+        <div class="services">
+            <h1>Services</h1>
+            <div class="contents">
+                <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-video-camera" aria-hidden="true"></i>
+    <h3>Video Editing</h3>
+    <div class="pra">
+        <p>I am a professional video editor and I have edited more than 50 videos.<span id="dots">...</span><span id="more">I have worked as video editor for more than 5 years</span></p>
+    <button onclick="myFunction()" id="myBtn">Read More</button>
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+    <h3>Digital Markeing</h3>
+    <div class="pra">
+        <p>I am a professional digital marketer and I have marketed more than 10 companies<span id="dotss">...</span><span id="mores">. I have worked as video editor for more than 5 years</span></p>
+        <button onclick="myFunction1()" id="myBtns">Read More</button>
+        <script>
+            function myFunction1() {
+              var dotss = document.getElementById("dotss");
+              var moreTexts = document.getElementById("mores");
+              var btnTexts = document.getElementById("myBtns");
+            
+              if (dotss.style.display === "none") {
+                dotss.style.display = "inline";
+                btnTexts.innerHTML = "Read more"; 
+                moreTexts.style.display = "none";
+              } else {
+                dotss.style.display = "none";
+                btnTexts.innerHTML = "Read less"; 
+                moreTexts.style.display = "inline";
+              }
+            }
+            </script>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+    <h3>Web Designing</h3>
+    <div class="pra">
+    <p>I am a professional web designer and hanve designed more then 10 websites<span id="dotsss">...</span><span id="moress">. I have worked as web developer for more than 10 years</span></p>
+    <button onclick="myFunction2()" id="myBtnss">Read More</button>
+    <script>
+        function myFunction2() {
+          var dotsss = document.getElementById("dotsss");
+          var moreTextss = document.getElementById("moress");
+          var btnTextss = document.getElementById("myBtnss");
+        
+          if (dotsss.style.display === "none") {
+            dotsss.style.display = "inline";
+            btnTextss.innerHTML = "Read more"; 
+            moreTextss.style.display = "none";
+          } else {
+            dotsss.style.display = "none";
+            btnTextss.innerHTML = "Read less"; 
+            moreTextss.style.display = "inline";
+          }
+        }
+        </script>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--Skills part-->
+    <div class="skillspart" id="skillspart">
+      <h1 class="meowmeow">Skills</h1>
+  <div class="skill">
+      <h1>Technical Skills</h1>
+<li><h3>HTML/CSS</h3>
+<span class="bar"><span class="html"></span></span>
+</li>
+<li><h3>Java</h3>
+  <span class="bar"><span class="java"></span></span>
+  </li>
+  <li><h3>C Programming</h3>
+      <span class="bar"><span class="C"></span></span>
+      </li>
+      <li><h3>Python</h3>
+          <span class="bar"><span class="Python"></span></span>
+          </li>
+          <li><h3>Javascript</h3>
+              <span class="bar"><span class="JS"></span></span>
+              </li>
+              <li><h3>Laravel</h3>
+                  <span class="bar"><span class="Lara"></span></span>
+                  </li>
+  </div>
+  <div class="prof">
+      <h1 class="hhh">Professional Skills</h2>
+      <section class="progress">
+          
+          <div class="conta">
+              <div class="carr">
+                  <div class="box">
+                  <div class="percent">
+                      <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="num11">
+                      <h2>90<span>%</span></h2>
+                  </div>
+              </div>
+              <h2 class="text3">Communication</h2>
+              </div>
+              </div>
+              <div class="carr">
+                  <div class="box">
+                  <div class="percent">
+                      <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="num11">
+                      <h2>80<span>%</span></h2>
+                  </div>
+              </div>
+              <h2 class="text3">Leadership</h2>
+              </div>
+              </div>
+              <div class="carr">
+                  <div class="box">
+                  <div class="percent">
+                      <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="num11">
+                      <h2>65<span>%</span></h2>
+                  </div>
+              </div>
+              <h2 class="text3">Time Management</h2>
+              </div>
+              </div>
+              <div class="carr">
+                  <div class="box">
+                  <div class="percent">
+                      <div class="dott"></div>
+                      <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="num11">
+                      <h2>50<span>%</span></h2>
+                  </div>
+              </div>
+              <h2 class="text3">Problem Solving</h2>
+              </div>
+              </div>
+          </div>
+          
+      </section></div>
+  </div>
+  <!--Portfolio part-->
+  <section class="portfolio" id="portfolio" >
+    <h2>My Works</h2>
+    <div class="portfolio-items">
+      <div class="item">
+       <img src="adobe.jpg" alt="Project 1">
+        <div class="overlay">
+          <h3>Project 1</h3>
+          <p><a href="GYM/project.html" target="_blank"><img src="adobe.jpg" alt="Project 1">About Web Developmet</a>/p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="web.jpg" alt="Project 1">
+        <div class="overlay">
+          <h3>Project 2</h3>
+          <p><a href="GYM/project.html" target="_blank"><img src="adobe.jpg" alt="Project 1">About Web Developmet</a>/p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="codes.jpg" alt="Project 3">
+        <div class="overlay">
+          <h3>Project 3</h3>
+          <p><a href="GYM/project.html" target="_blank"><img src="adobe.jpg" alt="Project 1">About Web Developmet</a>/p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="video.png" alt="Project 3">
+        <div class="overlay">
+          <h3>Project 3</h3>
+          <p><a href="GYM/project.html" target="_blank"><img src="adobe.jpg" alt="Project 1">About Web Developmet</a>/p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="UI.jpg" alt="Project 3">
+        <div class="overlay">
+          <h3>Project 3</h3>
+          <p><a href="GYM/project.html" target="_blank"><img src="adobe.jpg" alt="Project 1">About Web Developmet</a>/p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Contact Us part-->
+  <div class="contactuspage" id="contactme">
+    <section class="contactss" id="contact">
+        <div class="contentss">
+            <h2>Contact Me</h2>
+            <p>You can contact me through mail or phone and you can also send me mail via the chat box</p>
+        </div>
+        <div class="containerss">
+            <div class="contactInfo">
+                <div class="boxes">
+                    <div class="iconss"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text6">
+                        <h3>Address</h3>
+                        <p>Sangam Marg 32 <br>Maitidevi,Kathmandu,Nepal</p>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="iconss"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text6">
+                        <h3>Phone</h3>
+                        <p>980-306-2084</p>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="iconss"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text6">
+                        <h3>Email</h3>
+                        <p>akhilesh.sharma@deerwalk.edu.np</p>
+                    </div>
+                </div>
+                <h2 class="txttt">Connect through social Media</h2>
+                <ul class="sci">
+                    <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.gmail.com/"><i class="fab fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Enter your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <button class="scanfcode">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    </div>
+</body>
+</html>

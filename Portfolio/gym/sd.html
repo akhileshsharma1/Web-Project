@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .row{
+    border: 1px solid ;
+    display: flex;
+    flex-wrap:wrap;
+padding: 2em 1em;
+color: white;
+text-align: center;
+}
+.column{
+    width: 100%;
+    padding: 0.5em 0;
+}
+.row h1{
+width: 100%;
+text-align: center;
+font-size:3.5em ;
+color:#ffffff;
+}
+.card{
+    box-shadow:0 0 2.2em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: #090538;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #ffffff;
+
+}
+.card .imgcontain{
+    width:8em;
+    height:8em;
+    background-color:rgb(36, 102, 5);
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+.card img{
+    width: 100%;
+height: 100%;
+border-radius: 50%;
+}
+.card h3{
+    font-weight: 500;
+}
+.card p{
+    font-weight: 300;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+.icons{
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+.card:hover{
+    background:linear-gradient(#090538,#b14c08);
+color: #090538;
+}
+.card:hover .imgcontain{
+    transform: scale(1.1);
+} 
+@media screen and (min-width: 768px) {
+    section{
+        padding: 1em 7em;
+    }
+}
+@media screen and (min-width: 992px) {
+    section{
+        padding: 1em 7em;
+    }
+}
+.card{
+    padding: 5em 1em;
+}
+.column{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+}
+    </style>
+</head>
+<body>
+    <div class="row">
+        <h1>Trainers</h1>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="imgcontain">
+        <img src="akhilesh1.jpg">
+                        </div>
+        <div>
+        <h3>Akhilesh Sharma</h3>
+        <p>Owner of the gym</p>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-envelope"></i></a>
+        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="imgcontain">
+        <img src="sunav.jpg">
+                        </div>
+        <div>
+        <h3>Sunav Sharma</h3>
+        <p>Guru of Kick boxing</p>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-envelope"></i></a>
+        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="imgcontain">
+        <img src="adhit.jpg">
+                        </div>
+        <div>
+        <h3>Adhit Upadhyay</h3>
+        <p>Yoga guru</p>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-envelope"></i></a>
+        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="imgcontain">
+        <img src="rubin.jpg">
+                        </div>
+        <div>
+        <h3>Rubin Karki</h3>
+        <p>Personal Trainer</p>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-envelope"></i></a>
+        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="imgcontain">
+        <img src="raunak.jpg">
+                        </div>
+        <div>
+        <h3>Raunak Raj Ghimire</h3>
+        <p>Jumba</p>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-envelope"></i></a>
+        </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="imgcontain">
+        <img src="subik.jpg">
+                        </div>
+        <div>
+        <h3>Subikshya Acharya</h3>
+        <p>Dance</p>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-envelope"></i></a>
+        </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
